@@ -1,32 +1,25 @@
 package main;
 
+import inputs.KeyboardInputs;
+import inputs.MouseInputs;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
 public class GamePanel extends JPanel {
+    private int xDelta = 0;
+    private int yDelta = 0;
+    private GamePanel gamePanel;
+    private MouseInputs mouseInputs;
     public GamePanel(){
-        addKeyListener(new KeyListener() {
-            @Override
-            public void keyTyped(KeyEvent e) {
-
-            }
-
-            @Override
-            public void keyPressed(KeyEvent e) {
-
-            }
-
-            @Override
-            public void keyReleased(KeyEvent e) {
-
-            }
-        });
+        mouseInputs = new MouseInputs();
+        addKeyListener(new KeyboardInputs(this));
+        addMouseListener(mouseInputs);
+        addMouseMotionListener(mouseInputs);
     }
 
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        g.fillRect(100,100,200,50);
+        g.fillRect(100+xDelta,100+yDelta,200,50);
     }
 }
