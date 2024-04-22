@@ -1,17 +1,19 @@
 package main;
 
 import javax.swing.*;
+import java.awt.*;
 
-public class GameWindow {
-    private JFrame jframe;
+public class GameWindow extends JFrame {
+    private JFrame jFrame;
+//    private GamePanel gamePanel;
     public GameWindow(GamePanel gamePanel){
-        jframe = new JFrame();
-        jframe.setSize(400,400);
-        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jframe.add(gamePanel);
-        jframe.setLocationRelativeTo(null);
-        jframe.setResizable(false);
-        jframe.pack();
-        jframe.setVisible(true);
+        jFrame = new JFrame();
+        jFrame.setTitle("Whisper");
+//        jFrame.setSize(new Dimension(500,500));
+        jFrame.add(gamePanel);
+        jFrame.pack();
+        jFrame.setResizable(false);
+        jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jFrame.setVisible(true);
     }
 }
