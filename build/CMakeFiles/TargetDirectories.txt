@@ -1,0 +1,3 @@
+D:/Project/Whisper/build/CMakeFiles/ALL_BUILD.dir
+D:/Project/Whisper/build/CMakeFiles/ZERO_CHECK.dir
+D:/Project/Whisper/build/Whisper/CMakeFiles/WhisperGame.dir
