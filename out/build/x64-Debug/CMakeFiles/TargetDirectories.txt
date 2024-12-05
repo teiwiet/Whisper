@@ -1,3 +1,0 @@
-D:/Project/Whisper/out/build/x64-Debug/CMakeFiles/WhisperGame.dir
-D:/Project/Whisper/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-D:/Project/Whisper/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
